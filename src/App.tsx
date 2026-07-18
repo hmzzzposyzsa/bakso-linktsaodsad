@@ -5,9 +5,9 @@ import { logoImg } from './assets/images'
 
 const links = [
   {
-    title: 'GitHub',
-    url: 'https://github.com/arduyyproject',
-    icon: '💻',
+    title: 'WEB SHOP',
+    url: 'https://shop.arduyy.my.id',
+    icon: '🌐',
     color: '#6e5494',
   },
   {
@@ -17,28 +17,16 @@ const links = [
     color: '#ff0000',
   },
   {
-    title: 'Discord',
-    url: 'https://discord.gg/arduyyproject',
-    icon: '💬',
+    title: 'Tiktok Utama',
+    url: 'https://tiktok.com/@arduyyproject',
+    icon: '📱',
     color: '#5865f2',
   },
   {
-    title: 'Twitter / X',
-    url: 'https://x.com/arduyyproject',
-    icon: '🐦',
+    title: 'Tiktok info',
+    url: 'https://tiktok.com/@infoarduyy',
+    icon: '📱',
     color: '#1da1f2',
-  },
-  {
-    title: 'Instagram',
-    url: 'https://instagram.com/arduyyproject',
-    icon: '📸',
-    color: '#e1306c',
-  },
-  {
-    title: 'Documentation',
-    url: 'https://docs.arduyyproject.com',
-    icon: '📖',
-    color: '#10b981',
   },
 ]
 
