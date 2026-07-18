@@ -135,7 +135,7 @@ export default function App() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="mt-2 sm:mt-3 text-[11px] sm:text-sm text-white/35 tracking-[0.2em] sm:tracking-widest uppercase"
         >
-          Builder • Creator • Developer
+          Shop • Fm • Sawahan
         </motion.p>
 
         {/* Divider */}
