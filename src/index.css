@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #020c24;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+    background: #020c24;
+  }
+  body {
+    margin: 0;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  ::selection {
+    background: rgba(0, 102, 255, 0.3);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ---------------------------------------------------------- */
+/* Keyframes                                                    */
+/* ---------------------------------------------------------- */
+@keyframes meshFloat1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -40px) scale(1.05);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes meshFloat2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  40% {
+    transform: translate(-35px, 25px) scale(0.92);
+  }
+  70% {
+    transform: translate(20px, -30px) scale(1.08);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes meshFloat3 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-25px, -15px) scale(1.06);
+  }
+}
+
+@keyframes grainShift {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-2%, -6%);
+  }
+  20% {
+    transform: translate(-8%, 3%);
+  }
+  30% {
+    transform: translate(6%, -9%);
+  }
+  40% {
+    transform: translate(-4%, 8%);
+  }
+  50% {
+    transform: translate(-8%, -2%);
+  }
+  60% {
+    transform: translate(9%, 1%);
+  }
+  70% {
+    transform: translate(2%, 8%);
+  }
+  80% {
+    transform: translate(-6%, 6%);
+  }
+  90% {
+    transform: translate(7%, -4%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes borderSpin {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes spinForward {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* ---------------------------------------------------------- */
+/* Custom duration utilities (Tailwind v4 arbitrary durations   */
+/* already work via duration-[400ms] etc, these give shorthand) */
+/* ---------------------------------------------------------- */
+.duration-400 {
+  transition-duration: 400ms;
+}
+.duration-600 {
+  transition-duration: 600ms;
+}
+.duration-800 {
+  transition-duration: 800ms;
+}
+.duration-1200 {
+  transition-duration: 1200ms;
+}
