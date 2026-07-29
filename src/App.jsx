@@ -46,7 +46,7 @@ export default function App() {
 
           {/* Tagline */}
           <p className="mt-2 text-[10px] uppercase tracking-[0.3em] text-white/25 sm:text-xs">
-            Builder &middot; Creator &middot; Developer
+            DEV &middot; FM &middot; FT CS
           </p>
 
           {/* Divider */}
